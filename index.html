@@ -1,334 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raízes Novas</title>
-    <meta name="description" content="Cursos profissionalizantes e técnicos para transformar sua carreira. Educação de qualidade do Senac.">
-    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Raízes Novas</title>
+  <meta name="description" content="Raízes Novas" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
 
-    <!-- Cabeçalho Principal -->
-    <header class="main-header">
-        <div class="container"> 
-            <div class="logo"> 
-                <img src="img/logo.png" alt="Raízes Novas" class="logo-img">
-            </div>  
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="login.html"><i class="fas fa-user"></i> Área do Aluno</a></li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-toggle" aria-label="Abrir menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </header>
+  <!-- Cabeçalho -->
+  <header class="cabecalho__principal">
+    <div class="container__layout">
+      <div class="logo__marca">
+        <img src="img/logo.png" alt="Raízes Novas" class="logo__imagem">
+      </div>
 
-    <!-- Seção Hero -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Transforme sua vida através do conhecimento!</h1>
-                <p class="hero-subtitle">Oficinas livres qualidade Raízes Novas para impulsionar sua carreira e estilo de vida!</p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">1</span>
-                        <span class="stat-label">Oficinas Disponíveis</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">ZERO</span>
-                        <span class="stat-label">Custo</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.pexels.com/photos/5537990/pexels-photo-5537990.jpeg" alt="a">
-            </div>
+      <nav class="menu__principal" aria-label="Navegação principal">
+        <ul class="menu__lista">
+          <li><a href="#informativos"><i class="fas fa-newspaper"></i> Informativos</a></li>
+          <li><a href="#oficinas"><i class="fas fa-chalkboard-teacher"></i> Oficinas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="sessao__hero">
+      <div class="container__layout">
+        <div class="hero__conteudo">
+          <h1>Transforme sua vida através do conhecimento</h1>
+          <p class="hero__subtitulo">Descubra instituições e cursos que potencializam sua carreira!</p>
         </div>
+
+        <div class="hero__imagem">
+          <img src="https://images.pexels.com/photos/5537990/pexels-photo-5537990.jpeg" alt="Pessoas estudando">
+        </div>
+      </div>
     </section>
 
-    <!-- Seção de Cursos Destaque -->
-    <section class="featured-courses">
-        <div class="container">
-            <div class="section-header">
-                <h2><br>Oficinas</h2>
-                <p>Conheça nossas oficinas dísponiveis!</p>
-            </div>
-
-            <div class="course-tabs">
-                <button class="tab-btn active" data-category="all">Todos</button>
-                <button class="tab-btn" data-category="health">Esporte</button>
-            </div>
-                      
-            <div class="course-grid">
-                <!-- Oficina Basquete -->
-                <div class="course-card" data-category="health">
-                    <div class="course-image">
-                        <img src="img/basquete.jpg" alt="Basquete">
-                    </div>
-                    <div class="course-content">
-                        <span class="course-category">Esporte</span>
-                        <h3 class="course-title">Oficina de Basquete</h3>
-                        <p class="course-description">Conteúdo básico e prático do esporte</p>
-                        <div class="course-meta">
-                            <span><i class="far fa-clock"></i> 1 hora </span>
-                            <span><i class="fas fa-certificate"></i> Certificado de Participação</span>
-                        </div>
-                        <div class="course-footer">
-                            <span class="course-price">Gratuito</span>
-                            <a href="#" class="btn-outline">Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-    </section>
-    <!-- Seção de Blog/Notícias -->
-    <section class="blog-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Conteúdo Educacional</h2>
-                <p>Artigos, dicas e notícias para sua carreira</p>
-            </div>
-            
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://hotmilk.pucpr.br/wp-content/uploads/2023/03/12-tendencias-tecnologicas-estrategicas-gartner-2022-1-min.jpg" alt="Tendências em Tecnologia">
-                        <span class="blog-category">Tecnologia</span>
-                    </div>
-                    <div class="blog-content">
-                        <h3 class="blog-title">5 Tendências Tecnológicas para 2025</h3>
-                        <p class="blog-excerpt">Descubra as habilidades que estarão em alta no mercado de tecnologia no próximo ano e como se preparar.</p>
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar-alt"></i> 15 Jun 2025</span>
-                            <span><i class="far fa-clock"></i> 5 min leitura</span>
-                        </div>
-                        <a href="#" class="btn-link">Ler artigo</a>
-                    </div>
-                </article>
-                
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://blog.unis.edu.br/hubfs/10-dicas-de-como-se-portar-em-uma-entrevista-de-emprego.jpg" alt="Entrevista de Emprego">
-                        <span class="blog-category">Carreira</span>
-                    </div>
-                    <div class="blog-content">
-                        <h3 class="blog-title">Como se Destacar em uma Entrevista de Emprego</h3>
-                        <p class="blog-excerpt">Confira dicas práticas de recrutadores para impressionar na próxima entrevista e conquistar a vaga.</p>
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar-alt"></i> 2 Jun 2025</span>
-                            <span><i class="far fa-clock"></i> 8 min leitura</span>
-                        </div>
-                        <a href="#" class="btn-link">Ler artigo</a>
-                    </div>
-                </article>
-                
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://i0.wp.com/educacional.com.br/wp-content/uploads/2023/11/educacao-do-futuro.jpg?fit=1024%2C683&ssl=1" alt="Educação Online">
-                        <span class="blog-category">Educação</span>
-                    </div>
-                    <div class="blog-content">
-                        <h3 class="blog-title">O Futuro da Educação Profissional</h3>
-                        <p class="blog-excerpt">Como as novas tecnologias estão transformando a forma como aprendemos e nos qualificamos profissionalmente.</p>
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar-alt"></i> 20 Mai 2025</span>
-                            <span><i class="far fa-clock"></i> 10 min leitura</span>
-                        </div>
-                        <a href="#" class="btn-link">Ler artigo</a>
-                    </div>
-                </article>
-            </div>
+    <!-- Informativos -->
+    <section id="informativos" class="sessao__informativos">
+      <div class="container__layout coluna">
+        <div class="sessao__cabecalho">
+          <h2>Conteúdo Educacional</h2>
+          <p>Artigos, dicas e notícias para sua carreira.</p>
         </div>
 
-    <!-- Seção de Depoimentos -->
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="section-header center">
-                <h2><br>Histórias de Sucesso</h2>
-                <p>O que nossos participantes dizem sobre a experiência no Raízes Novas</p>
+        <div class="grade__informativos">
+          <!-- Card 1 -->
+          <article class="card__informativo">
+            <div class="informativo__imagem">
+              <img src="https://hotmilk.pucpr.br/wp-content/uploads/2023/03/12-tendencias-tecnologicas-estrategicas-gartner-2022-1-min.jpg" alt="Tendências tecnológicas">
             </div>
-            
-            <div class="testimonials-slider">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">Depois que tive contato com o Basquete pela Raízes Novas me interessei mais pelo o esporte e como funciona a NBA!</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Carlos Silva</h4>
-                            <span class="author-course">Oficina de Basquete</span>
-                            <div class="author-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">A experiência na oficina ajudou a me desenvolver melhor no esporte!</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Ana Oliveira</h4>
-                            <span class="author-course">Oficina de Basquete </span>
-                            <div class="author-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">A metodologia prática da Raízes Novas fez toda diferença.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Roberto Santos</h4>
-                            <span class="author-course">Oficina de Basquete</span>
-                            <div class="author-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="informativo__conteudo">
+              <span class="informativo__categoria">Tecnologia</span>
+              <h3 class="informativo__titulo">5 Tendências Tecnológicas para 2025</h3>
+              <p class="informativo__descricao">Descubra as habilidades que estarão em alta no mercado de tecnologia no próximo ano e como se preparar.</p>
+              <div class="informativo__meta">
+                <span><i class="far fa-calendar-alt"></i> 15 Jun 2025</span>
+              </div>
+              <div class="informativo__rodape">
+                <a class="link__leia" href="#">Ler artigo</a>
+              </div>
             </div>
-    
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card__informativo">
+            <div class="informativo__imagem">
+              <img src="https://img.freepik.com/fotos-gratis/duas-pessoas-apertando-as-maos-em-uma-entrevista-de-emprego_53876-148757.jpg" alt="Entrevista de emprego">
+            </div>
+            <div class="informativo__conteudo">
+              <span class="informativo__categoria">Carreira</span>
+              <h3 class="informativo__titulo">Como se Destacar em uma Entrevista de Emprego</h3>
+              <p class="informativo__descricao">Confira dicas práticas de recrutadores para impressionar na próxima entrevista e conquistar a vaga.</p>
+              <div class="informativo__meta">
+                <span><i class="far fa-calendar-alt"></i> 2 Jun 2025</span>
+              </div>
+              <div class="informativo__rodape">
+                <a class="link__leia" href="#">Ler artigo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card__informativo">
+            <div class="informativo__imagem">
+              <img src="https://img.freepik.com/fotos-gratis/estudante-do-ensino-medio-com-roupa-casual-estudando-na-sala-de-aula-com-laptop_23-2148906823.jpg" alt="Educação profissional">
+            </div>
+            <div class="informativo__conteudo">
+              <span class="informativo__categoria">Educação</span>
+              <h3 class="informativo__titulo">O Futuro da Educação Profissional</h3>
+              <p class="informativo__descricao">Como as novas tecnologias estão transformando a forma como aprendemos e nos qualificamos profissionalmente.</p>
+              <div class="informativo__meta">
+                <span><i class="far fa-calendar-alt"></i> 20 Mai 2025</span>
+              </div>
+              <div class="informativo__rodape">
+                <a class="link__leia" href="#">Ler artigo</a>
+              </div>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
 
-
-    </section>
-    <!-- Seção de Diferenciais -->
-    <section class="features-section">
-        <div class="container">
-            <div class="section-header center">
-                <h2>Por que escolher a Raízes Novas?</h2>
-                <p>Nossos diferenciais que fazem a diferença na sua formação</p>
+    <!-- Oficinas -->
+    <section id="oficinas" class="sessao__oficinas">
+      <div class="container__layout coluna">
+        <div class="sessao__cabecalho">
+          <h2>Oficinas</h2>
+          <p>Conheça nossas oficinas disponíveis.</p>
+        </div>
+          <!-- Oficina 1 -->
+        <div class="grade__oficinas">
+          <div class="card__oficina">
+            <div class="oficina__imagem">
+              <img src="img/basquete.jpg" alt="Basquete">
             </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h3>Conectividade com o Mercado</h3>
-                    <p>Parcerias com empresas para formação profissional, além de oficinas e projetos.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Certificação Reconhecida</h3>
-                    <p>Diplomas e certificados com validade nacional e reconhecimento no mercado de trabalho.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-hand-holding-usd"></i>
-                    </div>
-                    <h3>Financiamento Facilitado</h3>
-                    <p> Cursos e oficinas totalmente gratuitos</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Orientação de Carreira</h3>
-                    <p>Acompanhamento profissional para ajudar na construção do seu plano de carreira.</p>
-                </div>
+            <div class="oficina__conteudo">
+              <span class="oficina__categoria">Esporte</span>
+              <h3 class="oficina__titulo">Oficina de Basquete</h3>
+              <p class="oficina__descricao">Conteúdo prático e acessível para iniciantes.</p>
+              <div class="oficina__meta">
+                <span><i class="far fa-clock"></i> 1 hora</span>
+              </div>
+              <div class="oficina__rodape">
+                <span class="oficina__preco">Gratuito</span>
+                <a class="botao__detalhes" href="#">Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- Oficina 2 -->
+          <div class="grade__oficinas">
+          <div class="card__oficina">
+            <div class="oficina__imagem">
+              <img src="img/basquete.jpg" alt="Basquete">
+            </div>
+            <div class="oficina__conteudo">
+              <span class="oficina__categoria">Esporte</span>
+              <h3 class="oficina__titulo">Oficina de Basquete</h3>
+              <p class="oficina__descricao">Conteúdo prático e acessível para iniciantes.</p>
+              <div class="oficina__meta">
+                <span><i class="far fa-clock"></i> 1 hora</span>
+              </div>
+              <div class="oficina__rodape">
+                <span class="oficina__preco">Gratuito</span>
+                <a class="botao__detalhes" href="#">Detalhes</a>
+              </div>
             </div>
         </div>
+      </div>
     </section>
 
-    <!-- Seção de Newsletter -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Receba novidades e oportunidades</h2>
-                <p>Assine nossa newsletter e fique por dentro das nossas novas oficinas e novidades!</p>
-            </div>
-            <form class="newsletter-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Seu nome" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Seu melhor e-mail" required>
-                </div>
-                <button type="submit" class="btn-primary btn-large">Assinar</button>
-            </form>
+  <!-- Rodapé -->
+  <footer class="rodape__principal">
+    <div class="container__layout">
+      <div class="rodape__grid">
+        <div class="rodape__coluna">
+          <img src="https://via.placeholder.com/200x60?text=Senac+Inspire" alt="Raízes Novas" class="rodape__logo">
+          <p class="rodape__sobre">Transformando vidas através da educação profissional.</p>
+          <div class="rodape__redes">
+            <a href="https://www.instagram.com/raizes.novas_/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
-    </section>
 
-    <!-- Rodapé -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col footer-logo">
-                    <img src="https://via.placeholder.com/200x60?text=Senac+Inspire" alt="Raízes Novas" class="footer-logo-img">
-                    <p class="footer-about">Transformando vidas através da educação profissional de qualidade.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-title">Institucional</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Sobre o Raízes Novas</a></li>
-                        <li><a href="#">Trabalhe Conosco</a></li>
-                        <li><a href="#">Editais e Licitações</a></li>
-                        <li><a href="#">Transparência</a></li>
-                        <li><a href="#">Termos de Uso</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3 class="footer-title">Contato</h3>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-map-marker-alt"></i>Av. José Pinheiro Borges, S/N - Itaquera, São Paulo - SP, 08220-900</li>
-                        <li><i class="fas fa-phone-alt"></i>WhatsApp: (11) 3230-0454</li>
-                        <li><i class="fas fa-envelope"></i> raízesnovas@gmail.com</li>
-                        <li><i class="fas fa-clock"></i>Terça-Feira: 9h às 14h</li>
-                    </ul>
-                </div>
-            </div>
-                <div class="footer-copyright">
-                    <p>&copy; 2025 Raízes Novas. Todos os direitos reservados.</p>
-                </div>
-            </div>
+        <div class="rodape__coluna">
+          <h4>Contato</h4>
+          <ul class="rodape__contato">
+            <li><i class="fas fa-map-marker-alt"></i> Av. José Pinheiro Borges, Itaquera, SP</li>
+            <li><i class="fas fa-envelope"></i> raizesnovas@gmail.com</li>
+            <li><i class="fas fa-clock"></i> Terça: 8h às 14h</li>
+          </ul>
         </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Botão de WhatsApp -->
-    <a href="https://wa.me/551132300454" class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <script src="script.js"></script>
 </body>
 </html>
